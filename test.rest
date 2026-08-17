@@ -1,0 +1,30 @@
+
+GET https://jsonplaceholder.typicode.com/comments
+###
+
+POST https://jsonplaceholder.typicode.com/comments
+content-type: application/json
+
+{
+  "UserId": 1,
+  "name": "Kushal",
+  "email": "kushal@example.com"
+}
+
+###
+PATCH https://jsonplaceholder.typicode.com/comments/1
+content-type: application/json
+
+{
+  "name": "Kushal Upd"
+}
+
+
+###
+PUT https://jsonplaceholder.typicode.com/comments/1 
+Content-Type: application/json
+
+{
+  "name": "Kushal Updated",
+  "email": "test@email.com"
+  }
